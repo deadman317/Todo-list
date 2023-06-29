@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main {
+    background: #1b1b1b;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 2rem 0;
+}
+
+.todo-list {
+    width: 650px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #1b1b1b;
+}
+
+.list-head {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
+
+.todo-input {
+    padding: 10px;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.add-btn {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: grey;
+    color: #1b1b1b;
+}
+
+.item {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-right: 10px;
+}
+
+.item.completed p {
+    text-decoration: line-through;
+    color: #555;
+}
+
+.item-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-btn i {
+    padding: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
